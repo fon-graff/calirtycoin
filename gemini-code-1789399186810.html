@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CLARITY ($CLARITY) — Approved by Trump</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: '#00FF66',
+            darkBg: '#0D0E12',
+            cardBg: '#16181E',
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-darkBg text-white font-sans antialiased selection:bg-brand selection:text-black">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-darkBg/80 backdrop-blur-md border-b border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <div class="w-10 h-10 rounded-full bg-brand flex items-center justify-center font-black text-black text-xl">✅</div>
+        <span class="font-bold text-xl tracking-wider text-brand">$CLARITY</span>
+      </div>
+      <nav class="hidden md:flex gap-8 font-medium text-gray-300">
+        <a href="#about" class="hover:text-brand transition">Haqida</a>
+        <a href="#tokenomics" class="hover:text-brand transition">Tokenomika</a>
+        <a href="#approval" class="hover:text-brand transition">Ma'qullash</a>
+      </nav>
+      <a href="https://raydium.io" target="_blank" class="bg-brand text-black font-bold px-5 py-2 rounded-full hover:shadow-[0_0_20px_rgba(0,255,102,0.6)] transition duration-300">
+        Sotib olish
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center pt-28 pb-12 px-4 relative overflow-hidden">
+    <!-- Glow Effect background -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand/20 rounded-full blur-[120px] pointer-events-none"></div>
+
+    <div class="max-w-5xl mx-auto text-center z-10">
+      <span class="inline-block bg-brand/10 text-brand border border-brand/30 text-sm px-4 py-1.5 rounded-full font-semibold mb-6">
+        🔥 OFFICIALLY APPROVED ON LAPTOP!
+      </span>
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight leading-tight">
+        TRUMP LAPTOPIDA <span class="text-brand">CLARITY</span> LOYIHASIGA <br>KATTA <span class="text-brand">"YES"</span> BOSDI!
+      </h1>
+
+      <!-- Trump Meme Image Section -->
+      <div id="approval" class="my-8 relative max-w-2xl mx-auto rounded-3xl overflow-hidden border-2 border-brand/50 shadow-[0_0_35px_rgba(0,255,102,0.3)]">
+        <img src="watermarked_img_2170929107445261296.jpg" alt="Trump approving Clarity project on laptop" class="w-full object-cover">
+        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/90 to-transparent p-4 text-center">
+          <p class="text-brand font-bold text-lg">"CLARITY PROJECT — APPROVED BY PRESIDENT!" 🚀</p>
+        </div>
+      </div>
+
+      <p class="text-gray-400 text-lg md:text-xl mb-8 max-w-2xl mx-auto">
+        Tramp o'z laptopida Clarity loyihasini ko'rib chiqdi va eng katta YES tugmasini bosdi. Noyob tokenomika, 100% kuydirilgan likvidlik va 0% komissiya!
+      </p>
+
+      <!-- Buttons -->
+      <div class="flex flex-wrap gap-4 justify-center mb-10">
+        <a href="https://pump.fun" target="_blank" class="bg-brand text-black font-extrabold px-8 py-4 rounded-xl text-lg hover:scale-105 transition shadow-[0_0_25px_rgba(0,255,102,0.4)]">
+          Buy $CLARITY on Pump.fun
+        </a>
+        <a href="https://t.me" target="_blank" class="bg-cardBg border border-gray-700 font-bold px-8 py-4 rounded-xl text-lg hover:border-brand transition flex items-center gap-2">
+          <i class="fa-brands fa-telegram text-brand"></i> Telegram
+        </a>
+      </div>
+
+      <!-- Contract Address Copy Box -->
+      <div class="bg-cardBg border border-gray-800 p-4 rounded-2xl max-w-xl mx-auto flex items-center justify-between gap-3 shadow-lg">
+        <div class="text-left overflow-hidden">
+          <div class="text-xs text-gray-500 uppercase font-bold">Contract Address (Solana)</div>
+          <div id="caText" class="text-sm md:text-base font-mono text-gray-300 truncate">ClarityApprovedByTrump1111111111111111pump</div>
+        </div>
+        <button onclick="copyCA()" class="bg-brand/10 text-brand border border-brand/30 px-4 py-2 rounded-xl hover:bg-brand hover:text-black transition font-semibold text-sm whitespace-nowrap">
+          <i class="fa-regular fa-copy"></i> Nusxalash
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Stats -->
+  <section class="border-y border-gray-800 bg-cardBg/50 py-8">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div>
+        <div class="text-3xl font-bold text-brand">$1,000,000,000</div>
+        <div class="text-sm text-gray-400 mt-1">Jami Taminot (Supply)</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-brand">0%</div>
+        <div class="text-sm text-gray-400 mt-1">Sotish / Olish Solig'i</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-brand">100%</div>
+        <div class="text-sm text-gray-400 mt-1">Liquidity Burned 🔥</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-brand">APPROVED</div>
+        <div class="text-sm text-gray-400 mt-1">Trump Status ✅</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-6">Nima uchun <span class="text-brand">$CLARITY</span>?</h2>
+      <p class="text-gray-400 leading-relaxed text-lg mb-12">
+        Biz shunchaki navbatdagi memecoin emasmiz. Biz Tramp tomonidan laptopida rasman tasdiqlangan eng shaffof hamjamiyat loyihasimiz. Smart-kontrakt egaligi rad etilgan (renounced), likvidlik abadiy kuydirilgan.
+      </p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-cardBg p-6 rounded-2xl border border-gray-800 text-left hover:border-brand/40 transition">
+          <div class="text-brand text-3xl mb-4"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3 class="text-xl font-bold mb-2">100% Approved</h3>
+          <p class="text-gray-400 text-sm">Laptopdagi eng katta YES tugmasi bosilgan va loyiha yashil chiroq olgan.</p>
+        </div>
+        <div class="bg-cardBg p-6 rounded-2xl border border-gray-800 text-left hover:border-brand/40 transition">
+          <div class="text-brand text-3xl mb-4"><i class="fa-solid fa-users"></i></div>
+          <h3 class="text-xl font-bold mb-2">Community Driven</h3>
+          <p class="text-gray-400 text-sm">Har bir qaror Telegram va X sahifalarimizdagi jamiyat ovozi orqali qabul qilinadi.</p>
+        </div>
+        <div class="bg-cardBg p-6 rounded-2xl border border-gray-800 text-left hover:border-brand/40 transition">
+          <div class="text-brand text-3xl mb-4"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="text-xl font-bold mb-2">0% Tax</h3>
+          <p class="text-gray-400 text-sm">Savdo jarayonida hech qanday yashirin komissiyalar va soliqlarsiz erkin savdo qiling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tokenomics -->
+  <section id="tokenomics" class="py-20 px-4 bg-cardBg/30 border-t border-gray-800">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl md:text-5xl font-bold mb-12">Tokenomika</h2>
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="bg-cardBg p-8 rounded-3xl border border-gray-800 text-left">
+          <div class="space-y-6">
+            <div>
+              <div class="flex justify-between text-sm font-semibold mb-2">
+                <span>Raydium Liquidity Pool</span>
+                <span class="text-brand">90%</span>
+              </div>
+              <div class="w-full bg-gray-800 h-3 rounded-full overflow-hidden">
+                <div class="bg-brand h-full" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between text-sm font-semibold mb-2">
+                <span>Marketing & DEX Listings</span>
+                <span class="text-brand">10%</span>
+              </div>
+              <div class="w-full bg-gray-800 h-3 rounded-full overflow-hidden">
+                <div class="bg-brand h-full" style="width: 10%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-left space-y-4">
+          <h3 class="text-2xl font-bold">Adolatli Boshlanish (Fair Launch)</h3>
+          <p class="text-gray-400">Team va yaratuvchilar uchun hech qanday bepul ajratilgan tokenlar yo'q. Barcha ishtirokchilar tokenlarni teng sharoitda ochiq bozordan xarid qilishgan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-800 py-10 px-4 text-center">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-full bg-brand flex items-center justify-center font-black text-black">✅</div>
+        <span class="font-bold text-lg tracking-wider text-brand">$CLARITY</span>
+      </div>
+      <p class="text-gray-500 text-sm">© 2026 CLARITY MEMECOIN. All Rights Reserved. Not financial advice.</p>
+      <div class="flex gap-4 text-xl text-gray-400">
+        <a href="https://t.me" class="hover:text-brand"><i class="fa-brands fa-telegram"></i></a>
+        <a href="https://x.com" class="hover:text-brand"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://dexscreener.com" class="hover:text-brand"><i class="fa-solid fa-chart-line"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for CA Copying -->
+  <script>
+    function copyCA() {
+      const text = document.getElementById('caText').innerText;
+      navigator.clipboard.writeText(text);
+      alert('Contract Address nusxalandi: ' + text);
+    }
+  </script>
+</body>
+</html>
